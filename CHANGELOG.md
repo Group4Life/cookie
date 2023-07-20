@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2023-07-20)
+
+### Fix
+
+* Remove `license` related fields ([`00f51d7`](https://github.com/Group4Life/cookie/commit/00f51d7b6e2b0736a29b09fb99dc2af9a318af37))
+
+**[See all commits in this version](https://github.com/Group4Life/cookie/compare/v1.0.0...v1.0.1)**
+
 ## v1.0.0 (2023-07-20)
 
 ### Feature
