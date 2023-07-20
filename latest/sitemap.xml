@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://Group4Life.github.io/cookiecutter-pypackage/latest/</loc>
+         <loc>https://Group4Life.github.io/cookie/latest/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Group4Life.github.io/cookiecutter-pypackage/latest/CHANGELOG/</loc>
+         <loc>https://Group4Life.github.io/cookie/latest/CHANGELOG/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Group4Life.github.io/cookiecutter-pypackage/latest/CODE_OF_CONDUCT/</loc>
+         <loc>https://Group4Life.github.io/cookie/latest/CODE_OF_CONDUCT/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Group4Life.github.io/cookiecutter-pypackage/latest/CONTRIBUTING/</loc>
+         <loc>https://Group4Life.github.io/cookie/latest/CONTRIBUTING/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Group4Life.github.io/cookiecutter-pypackage/latest/LICENSE/</loc>
+         <loc>https://Group4Life.github.io/cookie/latest/LICENSE/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
