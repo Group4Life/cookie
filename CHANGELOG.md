@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v1.0.2 (2023-07-20)
+
+### Fix
+
+* Rename package to `cookie` ([`a492746`](https://github.com/Group4Life/cookie/commit/a4927460a82398d73dd0d36d669dcc14a10e6daf))
+
+**[See all commits in this version](https://github.com/Group4Life/cookie/compare/v1.0.1...v1.0.2)**
+
 ## v1.0.1 (2023-07-20)
 
 ### Fix
