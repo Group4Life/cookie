@@ -69,9 +69,9 @@ The test suite can be run using `poetry run poe test`.
 
 #### (Optional) Installing pyenv
 
-[pyenv](https://github.com/pyenv/pyenv) is used, in the context of the **cookiecutter-pypackage** project, in order to determine the project's compatibility with various versions of Python. Installing `pyenv` is not strictly required, but it is recommended.
+[pyenv](https://github.com/pyenv/pyenv) is used, in the context of the **{{cookiecutter.project_name}}** project, in order to determine the project's compatibility with various versions of Python. Installing `pyenv` is not strictly required, but it is recommended.
 
-Having installed `pyenv` in the **global** namespace, you may now run the following snippet, in order to install Python 3.7, 3.8 and 3.9, which, at the time of writing this document, are the only Python versions, supported by **cookiecutter-pypackage**.
+Having installed `pyenv` in the **global** namespace, you may now run the following snippet, in order to install Python 3.7, 3.8 and 3.9, which, at the time of writing this document, are the only Python versions, supported by **{{cookiecutter.project_name}}**.
 
 ```bash
 pyenv install 3.7.10 3.8.9 3.9.4

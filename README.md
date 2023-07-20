@@ -3,34 +3,29 @@
 <p align="center"><em>A Python Cookiecutter tailored towards Group4Life projects</em></p>
 
 <p align="center">
-  <a href="https://github.com/Group4Life/cookiecutter-pypackage/actions/workflows/ci.yml">
+  <a href="https://github.com/Group4Life/cookie/actions/workflows/ci.yml">
     <img
-      src="https://github.com/Group4Life/cookiecutter-pypackage/actions/workflows/ci.yml/badge.svg"
+      src="https://github.com/Group4Life/cookie/actions/workflows/ci.yml/badge.svg"
       alt="CI"
     />
   </a>
-  <a href="https://github.com/Group4Life/cookiecutter-pypackage/actions/workflows/cd.yml">
+  <a href="https://github.com/Group4Life/cookie/actions/workflows/cd.yml">
     <img
-      src="https://github.com/Group4Life/cookiecutter-pypackage/actions/workflows/cd.yml/badge.svg"
+      src="https://github.com/Group4Life/cookie/actions/workflows/cd.yml/badge.svg"
       alt="CD"
     />
   </a>
-  <a href="https://results.pre-commit.ci/latest/github/Group4Life/cookiecutter-pypackage/master">
+  <a href="https://results.pre-commit.ci/latest/github/Group4Life/cookie/master">
     <img
-      src="https://results.pre-commit.ci/badge/github/Group4Life/cookiecutter-pypackage/master.svg"
+      src="https://results.pre-commit.ci/badge/github/Group4Life/cookie/master.svg"
       alt="pre-commit.ci status"
     />
   </a>
-  <a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/Group4Life/cookiecutter-pypackage">
+  <a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/Group4Life/cookie">
     <img
       src="https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode"
       alt="Open in GitHub Codespaces"
     />
-  </a>
-  <a href="https://www.buymeacoffee.com/Group4Life">
-    <img
-      src="https://img.shields.io/badge/Buy%20me%20a-coffee-FFDD00.svg?style=flat&logo=buymeacoffee"
-      alt="Buy me a coffee">
   </a>
 </p>
 
@@ -45,7 +40,7 @@ pip install -U cookiecutter
 and generate a `Python` package project:
 
 ```
-cookiecutter gh:Group4Life/cookiecutter-pypackage
+cookiecutter gh:Group4Life/cookie
 ```
 
 ## :rocket: Features
@@ -76,6 +71,6 @@ cookiecutter gh:Group4Life/cookiecutter-pypackage
 
 ## :sparkles: Contributing
 
-Before contributing to the project, please go through the [Contributing Guidelines](https://Group4Life.github.io/cookiecutter-pypackage/latest/CONTRIBUTING/) first.
+Before contributing to the project, please go through the [Contributing Guidelines](https://Group4Life.github.io/cookie/latest/CONTRIBUTING/) first.
 
-The project's documentation can be found [here](https://Group4Life.github.io/cookiecutter-pypackage/).
+The project's documentation can be found [here](https://Group4Life.github.io/cookie/).
