@@ -1,0 +1,25 @@
+{
+  "project_name": "cookiecutter-pypackage",
+  "package_name": "{{ cookiecutter.project_name.replace('-', '_').replace(' ', '_').lower() }}",
+  "project_description": "🐍 An awesome python package by the name {{ cookiecutter.project_name.replace('-', ' ').title() }}",
+  "author": "Vasilis Sioros",
+  "email": "billsioros97@gmail.com",
+  "github_user": "billsioros",
+  "github_repository": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}",
+  "version": "0.0.0",
+  "license": [
+    "mit",
+    "agpl-3.0",
+    "apache-2.0",
+    "bsd-2-clause",
+    "bsd-3-clause",
+    "bsl-1.0",
+    "cc0-1.0",
+    "epl-2.0",
+    "gpl-2.0",
+    "gpl-3.0",
+    "lgpl-2.1",
+    "mpl-2.0",
+    "unlicense"
+  ]
+}

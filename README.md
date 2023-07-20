@@ -1,6 +1,6 @@
-<h1 align="center">🐍🍪 Group4Life Python cookiecutter</h1>
+<h1 align="center">🐍🍪 Group4Life Cookie</h1>
 
-<p align="center"><em>A strongly opinionated, bleeding-edge Python template</em></p>
+<p align="center"><em>A Python Cookiecutter tailored towards Group4Life projects</em></p>
 
 <p align="center">
   <a href="https://github.com/Group4Life/cookiecutter-pypackage/actions/workflows/ci.yml">
@@ -19,18 +19,6 @@
     <img
       src="https://results.pre-commit.ci/badge/github/Group4Life/cookiecutter-pypackage/master.svg"
       alt="pre-commit.ci status"
-    />
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img
-      src="https://img.shields.io/github/license/Group4Life/cookiecutter-pypackage"
-      alt="GitHub"
-    />
-  </a>
-  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FGroup4Life%2Fcookiecutter-pypackage-instance?ref=badge_shield">
-    <img
-      src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FGroup4Life%2Fcookiecutter-pypackage-instance.svg?type=shield"
-      alt="FOSSA Status"
     />
   </a>
   <a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/Group4Life/cookiecutter-pypackage">
@@ -86,27 +74,8 @@ cookiecutter gh:Group4Life/cookiecutter-pypackage
 
 > The template supports Python 3.7 or higher.
 
-## :bookmark_tabs: Citation
-
-```bibtex
-@misc{cookiecutter-pypackage,
-  author = {Vasilis Sioros},
-  title = {cookiecutter-pypackage: A strongly opinionated, bleeding-edge Python template},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/Group4Life/cookiecutter-pypackage}}
-}
-```
-
-## :book: Documentation
-
-The project's documentation can be found [here](https://Group4Life.github.io/cookiecutter-pypackage/).
-
-## :heart: Support the project
-
-Feel free to [**Buy me a coffee! ☕**](https://www.buymeacoffee.com/Group4Life).
-
 ## :sparkles: Contributing
 
-If you would like to contribute to the project, please go through the [Contributing Guidelines](https://Group4Life.github.io/cookiecutter-pypackage/latest/CONTRIBUTING/) first.
+Before contributing to the project, please go through the [Contributing Guidelines](https://Group4Life.github.io/cookiecutter-pypackage/latest/CONTRIBUTING/) first.
+
+The project's documentation can be found [here](https://Group4Life.github.io/cookiecutter-pypackage/).
