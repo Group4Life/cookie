@@ -1,0 +1,95 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = [
+  "poetry-core>=1",
+]
+
+[tool.poetry]
+name = "cookiecutter-pypackage"
+version = "0.1.0"
+description = "🐍🍪 A Python Cookiecutter tailored towards Group4Life projects"
+readme = "README.md"
+authors = ["billsioros <billsioros97@gmail.com>"]
+license = "MIT"
+homepage = "https://Group4Life.github.io/cookiecutter-pypackage"
+repository = "https://github.com/Group4Life/cookiecutter-pypackage"
+keywords = []
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Group4Life/cookiecutter-pypackage/issues"
+"Changelog" = "https://github.com/Group4Life/cookiecutter-pypackage/releases"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "*"
+isort = "*"
+pre-commit = "*"
+poethepoet = "*"
+pytest = "*"
+pytest-sugar = "*"
+pytest-clarity = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-minify-plugin = "*"
+mkdocs-redirects = "*"
+mdx-truly-sane-lists = "*"
+mike = "*"
+pytest-cookies = "*"
+black = "*"
+
+[tool.black]
+line-length = 99
+target-version = ["py37", "py38"]
+skip-string-normalization = true
+exclude = "{{cookiecutter.project_name}}"
+
+[tool.isort]
+profile = "black"
+src_paths = ["cookiecutter-pypackage", "hooks", "tests"]
+line_length = 99
+
+[tool.pytest.ini_options]
+addopts = "-vv --color=yes"
+log_cli = false
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+log_cli_format = "%(asctime)s %(levelname)s %(message)s"
+log_cli_level = "INFO"
+python_files = "test_*.py"
+python_functions = "test_*"
+testpaths = "tests"
+
+[tool.semantic_release]
+upload_to_pypi = false
+version_toml = "pyproject.toml:tool.poetry.version"
+changelog_components = "semantic_release.changelog.changelog_headers,semantic_release.changelog.compare_url"
+build_command = false
+
+[tool.poe.tasks]
+clean = { cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache", help = "Clean up any auxiliary files" }
+format = { shell = "poetry run isort .; poetry run black .", help = "Format your codebase" }
+hooks = { cmd = "poetry run pre-commit run --all-files", help = "Run all pre-commit hooks" }
+test = { cmd = "poetry run pytest --cov=cookiecutter-pypackage", help = "Run the test suite" }
+lint = { cmd = "poetry run ruff check src", help = "Lint your code for errors" }
+docs = { shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve", help = "Build and serve the documentation" }
+export = { cmd = "poetry export --without-hashes --dev -o requirements.txt" }
+
+[tool.docformatter]
+black = true
+non-strict = true
+non-cap = [
+  "cookiecutter-pypackage",
+]
+recursive = true
+in-place = true
+
+[tool.bandit]
+recursive = true
+exclude_dirs = ["tests"]
