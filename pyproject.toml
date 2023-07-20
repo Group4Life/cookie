@@ -5,14 +5,14 @@ requires = [
 ]
 
 [tool.poetry]
-name = "cookiecutter-pypackage"
+name = "cookie"
 version = "1.0.1"
 description = "🐍🍪 A Python Cookiecutter tailored towards Group4Life projects"
 readme = "README.md"
 authors = ["billsioros <billsioros97@gmail.com>"]
 license = "MIT"
-homepage = "https://Group4Life.github.io/cookiecutter-pypackage"
-repository = "https://github.com/Group4Life/cookiecutter-pypackage"
+homepage = "https://Group4Life.github.io/cookie"
+repository = "https://github.com/Group4Life/cookie"
 keywords = []
 classifiers = [
     "Programming Language :: Python",
@@ -22,8 +22,8 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/Group4Life/cookiecutter-pypackage/issues"
-"Changelog" = "https://github.com/Group4Life/cookiecutter-pypackage/releases"
+"Bug Tracker" = "https://github.com/Group4Life/cookie/issues"
+"Changelog" = "https://github.com/Group4Life/cookie/releases"
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -53,7 +53,7 @@ exclude = "{{cookiecutter.project_name}}"
 
 [tool.isort]
 profile = "black"
-src_paths = ["cookiecutter-pypackage", "hooks", "tests"]
+src_paths = ["cookie", "hooks", "tests"]
 line_length = 99
 
 [tool.pytest.ini_options]
@@ -76,7 +76,7 @@ build_command = false
 clean = { cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache", help = "Clean up any auxiliary files" }
 format = { shell = "poetry run isort .; poetry run black .", help = "Format your codebase" }
 hooks = { cmd = "poetry run pre-commit run --all-files", help = "Run all pre-commit hooks" }
-test = { cmd = "poetry run pytest --cov=cookiecutter-pypackage", help = "Run the test suite" }
+test = { cmd = "poetry run pytest --cov=cookie", help = "Run the test suite" }
 lint = { cmd = "poetry run ruff check src", help = "Lint your code for errors" }
 docs = { shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve", help = "Build and serve the documentation" }
 export = { cmd = "poetry export --without-hashes --dev -o requirements.txt" }
@@ -85,7 +85,7 @@ export = { cmd = "poetry export --without-hashes --dev -o requirements.txt" }
 black = true
 non-strict = true
 non-cap = [
-  "cookiecutter-pypackage",
+  "cookie",
 ]
 recursive = true
 in-place = true

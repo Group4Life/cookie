@@ -1,9 +1,9 @@
-site_name: cookiecutter-pypackage
+site_name: cookie
 site_description: "🐍🍪 A Python Cookiecutter tailored towards Group4Life projects"
-site_url: "https://Group4Life.github.io/cookiecutter-pypackage/"
-repo_url: "https://github.com/Group4Life/cookiecutter-pypackage"
+site_url: "https://Group4Life.github.io/cookie/"
+repo_url: "https://github.com/Group4Life/cookie"
 edit_uri: "edit/master/docs/"
-repo_name: "Group4Life/cookiecutter-pypackage"
+repo_name: "Group4Life/cookie"
 copyright: |
   Copyright &copy; 2021 <a href="https://github.com/Group4Life"  target="_blank" rel="noopener">Group4Life</a>
 nav:

@@ -32,7 +32,7 @@
       alt="Open in GitHub Codespaces"
     />
   </a>
-  <a href="https://github.com/Group4Life/cookiecutter-pypackage">
+  <a href="https://github.com/Group4Life/cookie">
     <img
       src="https://img.shields.io/badge/cookiecutter-template-D4AA00.svg?style=flat&logo=cookiecutter"
       alt="Cookiecutter Template">
