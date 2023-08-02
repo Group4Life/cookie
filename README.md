@@ -63,7 +63,7 @@ cookiecutter gh:Group4Life/cookie
 * Beautiful [`YAML issue templates`](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms).
 * Informative [`PR template`](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) and [`Security Policy`](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository).
 * Add informative comments on issues & PRs based on assigned labels using [`Label Commenter`](https://github.com/peaceiris/actions-label-commenter).
-* Manage project labels with [`GitHub Labeler`](crazy-max/ghaction-github-labeler@v3.1.1).
+* Manage project labels with [`GitHub Labeler`](https://github.com/crazy-max/ghaction-github-labeler).
 * Ready-to-use `.editorconfig` and `.gitignore`.
 * Be always ready to code using [`GitHub Codespaces`](https://github.com/features/codespaces).
 
