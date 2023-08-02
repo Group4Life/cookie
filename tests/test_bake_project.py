@@ -4,7 +4,6 @@ import os
 import shlex
 import subprocess
 
-import pytest
 from cookiecutter.utils import rmtree
 
 
