@@ -73,13 +73,33 @@ changelog_components = "semantic_release.changelog.changelog_headers,semantic_re
 build_command = false
 
 [tool.poe.tasks]
-clean = { cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache", help = "Clean up any auxiliary files" }
-format = { shell = "poetry run isort .; poetry run black .", help = "Format your codebase" }
-hooks = { cmd = "poetry run pre-commit run --all-files", help = "Run all pre-commit hooks" }
-test = { cmd = "poetry run pytest --cov=cookie", help = "Run the test suite" }
-lint = { cmd = "poetry run ruff check src", help = "Lint your code for errors" }
-docs = { shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve", help = "Build and serve the documentation" }
-export = { cmd = "poetry export --without-hashes --dev -o requirements.txt" }
+
+  [tool.poe.tasks.clean]
+    cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache"
+    help = "Clean up any auxiliary files"
+
+  [tool.poe.tasks.format]
+    shell = "poetry run isort .; poetry run black ."
+    help = "Format your codebase"
+
+  [tool.poe.tasks.hooks]
+    cmd = "poetry run pre-commit run --all-files"
+    help = "Run all pre-commit hooks"
+
+  [tool.poe.tasks.test]
+    cmd = "poetry run pytest --cov=cookie"
+    help = "Run the test suite"
+
+  [tool.poe.tasks.lint]
+    cmd = "poetry run ruff check src"
+    help = "Lint your code for errors"
+
+  [tool.poe.tasks.docs]
+    shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve"
+    help = "Build and serve the documentation"
+
+  [tool.poe.tasks.export]
+    cmd = "poetry export --without-hashes --dev -o requirements.txt"
 
 [tool.docformatter]
 black = true
