@@ -6,6 +6,20 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2023-08-03)
+
+### Fix
+
+* Matrix python version `ci` ([`d9b7177`](https://github.com/Group4Life/cookie/commit/d9b71774c83f2eac76793bad849822f868ba0b0d))
+
+### Documentation
+
+* Use `mkdocs` `watch` ([`f7adbca`](https://github.com/Group4Life/cookie/commit/f7adbca2d1e0ce3b16839cc012c046e4a10640aa))
+* Change `mkdocs` theme ([`f1a538d`](https://github.com/Group4Life/cookie/commit/f1a538d40b8f1b8237864229029b64cad95d28b7))
+* Change default `mkdocs` theme ([`83b94e5`](https://github.com/Group4Life/cookie/commit/83b94e5461b6f2fe02986f787085e157fcea93cc))
+
+**[See all commits in this version](https://github.com/Group4Life/cookie/compare/v1.0.2...v1.0.3)**
+
 ## v1.0.2 (2023-07-20)
 
 ### Fix
