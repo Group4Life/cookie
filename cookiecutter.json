@@ -2,9 +2,9 @@
   "project_name": "cookie",
   "package_name": "{{ cookiecutter.project_name.replace('-', '_').replace(' ', '_').lower() }}",
   "project_description": "🐍 An awesome python package by the name {{ cookiecutter.project_name.replace('-', ' ').title() }}",
-  "author": "Vasilis Sioros",
+  "author": "Vassilis Sioros",
   "email": "billsioros97@gmail.com",
-  "github_user": "billsioros",
+  "github_user": "Group4Life",
   "github_repository": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}",
   "version": "0.0.0"
 }
