@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v1.0.4 (2023-11-03)
+
+### Fix
+
+* Change defaults ([`71f63a8`](https://github.com/Group4Life/cookie/commit/71f63a8efefa2191ceec1170dfed07bb7b4a07cf))
+
+**[See all commits in this version](https://github.com/Group4Life/cookie/compare/v1.0.3...v1.0.4)**
+
 ## v1.0.3 (2023-08-03)
 
 ### Fix
