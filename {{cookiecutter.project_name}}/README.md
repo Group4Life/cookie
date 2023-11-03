@@ -50,12 +50,7 @@ In order to locally set up the project please follow the instructions below:
 
 ```shell
 # Set up the GitHub repository
-git init
-git config --local user.name {{cookiecutter.author}}
-git config --local user.email {{cookiecutter.email}}
-git add .
-git commit -m "feat: initial commit"
-git remote add origin {{cookiecutter.github_repository}}
+git clone {{cookiecutter.github_repository}}
 
 # Create a virtual environment using poetry and install the required dependencies
 poetry shell
