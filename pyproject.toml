@@ -56,6 +56,15 @@ profile = "black"
 src_paths = ["cookie", "hooks", "tests"]
 line_length = 99
 
+[tool.docformatter]
+black = true
+non-strict = true
+non-cap = [
+  "cookie",
+]
+recursive = true
+in-place = true
+
 [tool.pytest.ini_options]
 addopts = "-vv --color=yes"
 log_cli = false
@@ -100,15 +109,6 @@ build_command = false
 
   [tool.poe.tasks.export]
     cmd = "poetry export --without-hashes --dev -o requirements.txt"
-
-[tool.docformatter]
-black = true
-non-strict = true
-non-cap = [
-  "cookie",
-]
-recursive = true
-in-place = true
 
 [tool.bandit]
 recursive = true
