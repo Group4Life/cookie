@@ -8,108 +8,88 @@ requires = [
 name = "cookie"
 version = "1.0.4"
 description = "🐍🍪 A Python Cookiecutter tailored towards Group4Life projects"
-readme = "README.md"
-authors = ["billsioros <billsioros97@gmail.com>"]
 license = "MIT"
+authors = [ "billsioros <billsioros97@gmail.com>" ]
+readme = "README.md"
 homepage = "https://Group4Life.github.io/cookie"
 repository = "https://github.com/Group4Life/cookie"
 keywords = []
 classifiers = [
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
 ]
-
-[tool.poetry.urls]
-"Bug Tracker" = "https://github.com/Group4Life/cookie/issues"
-"Changelog" = "https://github.com/Group4Life/cookie/releases"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-
-[tool.poetry.group.dev.dependencies]
-python-semantic-release = "*"
-isort = "*"
-pre-commit = "*"
-poethepoet = "*"
-pytest = "*"
-pytest-sugar = "*"
-pytest-clarity = "*"
-mkdocs = "*"
-mkdocs-material = "*"
-mkdocs-minify-plugin = "*"
-mkdocs-redirects = "*"
-mdx-truly-sane-lists = "*"
-mike = "*"
-pytest-cookies = "*"
-black = "*"
+dependencies.python = "^3.9"
+group.dev.dependencies.black = "*"
+group.dev.dependencies.isort = "*"
+group.dev.dependencies.mdx-truly-sane-lists = "*"
+group.dev.dependencies.mike = "*"
+group.dev.dependencies.mkdocs = "*"
+group.dev.dependencies.mkdocs-material = "*"
+group.dev.dependencies.mkdocs-minify-plugin = "*"
+group.dev.dependencies.mkdocs-redirects = "*"
+group.dev.dependencies.poethepoet = "*"
+group.dev.dependencies.pre-commit = "*"
+group.dev.dependencies.pytest = "*"
+group.dev.dependencies.pytest-clarity = "*"
+group.dev.dependencies.pytest-cookies = "*"
+group.dev.dependencies.pytest-sugar = "*"
+group.dev.dependencies.python-semantic-release = "*"
+urls."Bug Tracker" = "https://github.com/Group4Life/cookie/issues"
+urls.Changelog = "https://github.com/Group4Life/cookie/releases"
 
 [tool.black]
+target-version = [ "py37", "py38" ]
 line-length = 99
-target-version = ["py37", "py38"]
-skip-string-normalization = true
 exclude = "{{cookiecutter.project_name}}"
+skip-string-normalization = true
 
 [tool.isort]
 profile = "black"
-src_paths = ["cookie", "hooks", "tests"]
 line_length = 99
-
-[tool.pytest.ini_options]
-addopts = "-vv --color=yes"
-log_cli = false
-log_cli_date_format = "%Y-%m-%d %H:%M:%S"
-log_cli_format = "%(asctime)s %(levelname)s %(message)s"
-log_cli_level = "INFO"
-python_files = "test_*.py"
-python_functions = "test_*"
-testpaths = "tests"
-
-[tool.semantic_release]
-upload_to_pypi = false
-version_toml = "pyproject.toml:tool.poetry.version"
-changelog_components = "semantic_release.changelog.changelog_headers,semantic_release.changelog.compare_url"
-build_command = false
-
-[tool.poe.tasks]
-
-  [tool.poe.tasks.clean]
-    cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache"
-    help = "Clean up any auxiliary files"
-
-  [tool.poe.tasks.format]
-    shell = "poetry run isort .; poetry run black ."
-    help = "Format your codebase"
-
-  [tool.poe.tasks.hooks]
-    cmd = "poetry run pre-commit run --all-files"
-    help = "Run all pre-commit hooks"
-
-  [tool.poe.tasks.test]
-    cmd = "poetry run pytest --cov=cookie"
-    help = "Run the test suite"
-
-  [tool.poe.tasks.lint]
-    cmd = "poetry run ruff check src"
-    help = "Lint your code for errors"
-
-  [tool.poe.tasks.docs]
-    shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve"
-    help = "Build and serve the documentation"
-
-  [tool.poe.tasks.export]
-    cmd = "poetry export --without-hashes --dev -o requirements.txt"
+src_paths = [ "cookie", "hooks", "tests" ]
 
 [tool.docformatter]
+in-place = true
+recursive = true
 black = true
 non-strict = true
 non-cap = [
   "cookie",
 ]
-recursive = true
-in-place = true
 
 [tool.bandit]
+exclude_dirs = [ "tests" ]
 recursive = true
-exclude_dirs = ["tests"]
+
+[tool.pytest]
+ini_options.testpaths = "tests"
+ini_options.python_files = "test_*.py"
+ini_options.python_functions = "test_*"
+ini_options.addopts = "-vv --color=yes"
+ini_options.log_cli = false
+ini_options.log_cli_level = "INFO"
+ini_options.log_cli_format = "%(asctime)s %(levelname)s %(message)s"
+ini_options.log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+build_command = false
+changelog_components = "semantic_release.changelog.changelog_headers,semantic_release.changelog.compare_url"
+upload_to_pypi = false
+
+[tool.poe]
+tasks.clean.cmd = "rm -rf ./**/__pycache__ dist site .pytest_cache"
+tasks.clean.help = "Clean up any auxiliary files"
+tasks.format.shell = "poetry run isort .; poetry run black ."
+tasks.format.help = "Format your codebase"
+tasks.hooks.cmd = "poetry run pre-commit run --all-files"
+tasks.hooks.help = "Run all pre-commit hooks"
+tasks.test.cmd = "poetry run pytest --cov=cookie"
+tasks.test.help = "Run the test suite"
+tasks.lint.cmd = "poetry run ruff check src"
+tasks.lint.help = "Lint your code for errors"
+tasks.docs.shell = "python -c 'import webbrowser; webbrowser.open(\"http://127.0.0.1:8000\")'; poetry run mkdocs serve"
+tasks.docs.help = "Build and serve the documentation"
+tasks.export.cmd = "poetry export --without-hashes --dev -o requirements.txt"
